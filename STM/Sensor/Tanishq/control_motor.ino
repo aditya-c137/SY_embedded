@@ -1,6 +1,6 @@
 /*
 This is a very simple example of controlling a dc motor. There are two inputs.One for switch and other to control the speed of the motor. 
-I assume that it is a push button switch. That means if it is pressed once it turns on and pushed again turn off. 
+I assume that it is a push button switch. That means if it is pressed once, it turns on and if pushed again, turn off. 
 The second input is analog input using s potentiometer which controls speed. The input is in value 0 to 1023. But we have to convert it to
 0 to 255 because pwm of arduino works on that range only.
 
