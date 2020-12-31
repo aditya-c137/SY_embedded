@@ -10,6 +10,7 @@ void setup()
 {
   pinMode(motorPin, OUTPUT);
   Serial.begin(9600);
+  Serial.println("Input should be between 0 to 255.");
 }
 
 void loop()
