@@ -1,4 +1,4 @@
-/*		Simple Code to Rotate a Motor		*/   
+/*		Simple Code to Rotate a DC Motor		*/   
 int motorPin = 6;
 
 void setup()
