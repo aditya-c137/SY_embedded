@@ -8,7 +8,7 @@
 2. You'll see the same repository made under your account
 ![](TutorialImages/Step2.jpg)
 
-3. Now suppose you want to submit the code you wrote for DC motor on Arduino. DC motor is a type of **Actuator**
+3. Now suppose you want to submit the code you wrote for DC motor on Arduino. DC motor is a type of an **Actuator**
 so click on `Arduino` and then on `Actuator`.
 ![](TutorialImages/Step3.jpg)
 
