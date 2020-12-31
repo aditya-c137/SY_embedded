@@ -55,7 +55,7 @@ void loop() {
   
 
 
-    //This part prints the speed of motor every secon on the screen
+    //This part prints the speed of motor every second on the screen
    
    if(time_start-millis()%1000 == 0){                                                          //check if 1 second passed
 
