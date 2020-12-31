@@ -39,10 +39,12 @@ void loop() {
 
   if(input == 1 && flag_state == false){                                       //if switch pressed and motor is off, on it
     flag_state = true;
+    delay(1000);                                                               //delay because we press button for long time
     }
    else if (input == 1 && flag_state == true){                                 //if swich pressed and motor already on,off it
     flag_state = false;
-    }
+    delay(1000);                                                               //delay because we press button for long time
+   }
   
   int rpm_motor  = (analog_input/4);                                          //convert 0-1023 to 0-255
   
