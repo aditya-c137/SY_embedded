@@ -1,5 +1,6 @@
 /*
-driving a dc motor
+code for driving a dc motor using arduino and L2987 as motor driver
+the speed of rotation and direction of rotation can be regulated
 */
 
 const int input_1=8; //input to driver for direction of rotation
