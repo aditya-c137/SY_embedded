@@ -1,4 +1,3 @@
-
 /*
 * In the circuit, two push buttons are used. 
 * Using those two, Solenoid can be turn ON or OFF.
@@ -14,8 +13,8 @@ void setup()
   pinMode(pushButtonON, INPUT);
   pinMode(pushButtonOFF, INPUT);
   pinMode(solenoidValve, OUTPUT);
-  while(!Serial)
-  Serial.println("Solenoid can be turn 'ON' and 'OFF' using the push buttons.");
+  while(!Serial){}
+  
 }
 
 void loop()
@@ -24,19 +23,20 @@ void loop()
   if(digitalRead(pushButtonON)==HIGH)
   {
     digitalWrite(solenoidValve, HIGH);
-    Serial.println("Solenoid -> ON.");
+    Serial.println("Solenoid -> ON");
     delay(500);
   }
   else if(digitalRead(pushButtonOFF)==HIGH)
   {
     digitalWrite(solenoidValve, LOW);
-    Serial.println("Solenoid -> OFF.");
+    Serial.println("Solenoid -> OFF");
     delay(500);
   }
   
   while(!flag)
   {
-    Serial.println("Solenoid -> OFF.");
+    Serial.println("Solenoid can be turn 'ON' and 'OFF' using the push buttons.\n");
+    Serial.println("Solenoid -> OFF");
   	flag = true;
   }
   
