@@ -5,6 +5,6 @@
 
 <br />
 <br />
-# Description
+## Description
 <br />
 - A servo motor is a type of motor that can rotate with great precision.
