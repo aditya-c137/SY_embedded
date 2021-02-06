@@ -1,6 +1,20 @@
-# LM-35 Sensor
-1. Program to display temperature 
-2. Program to drive DC motor depending on temperature
+const int sensorPin = A1;	
 
-## Description
-* LM35 is a precession Integrated circuit Temperature sensor, whose output voltage varies, based on the temperature around it.
+void setup() 
+{
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  int tempADCval;
+  float temp_val;
+  tempADCval = analogRead(sensorPin);	
+  temp_val = (tempADCval/1024) * 5000;	
+  temp_val = (temp_val/10);	
+  Serial.print("Temperature: ");
+  Serial.print(temp_val);
+  Serial.println(" °C");
+  delay(1000);
+  
+}
